@@ -55,7 +55,7 @@ sha256sum LeoDeepAI_0.1.1_arm64-v8a-release.apk
 
 - 一个可以静态托管的下载页（`index.html` + `assets/`），无构建步骤、无第三方运行时依赖。
 - GitHub Releases 里的安装包，以及每个版本的发布说明（`docs/`）。
-- 一套 GitHub Pages 自动部署工作流（`.github/workflows/pages.yml`）。
+- 直接由 GitHub Pages 从 `main` 分支根目录发布的静态页面，没有构建步骤。
 
 ### 这个仓库不是什么
 
@@ -74,7 +74,7 @@ python -m http.server 8080
 
 ## 部署
 
-推送到 `main` 后，`.github/workflows/pages.yml` 会把 `index.html` 与 `assets/` 发布到 GitHub Pages。首次使用需要在仓库 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。
+推送到 `main` 后，GitHub Pages 会直接发布仓库根目录的静态文件。首次使用需要在仓库 **Settings → Pages → Build and deployment → Source** 选择 **Deploy from a branch**，分支选 `main`、目录选 `/ (root)`。`.nojekyll` 已存在，Pages 不会对文件做 Jekyll 处理。
 
 如果 fork 这个仓库自建下载站，记得把 `index.html` 里的下载链接、GitHub 链接和 `README.md` 里的地址换成你自己的仓库。
 
@@ -120,7 +120,8 @@ python -m http.server 8080
 │  └─ fonts/                  Geist / Geist Mono（SIL OFL 1.1）
 ├─ docs/                      各版本发布说明
 ├─ scripts/publish-release.ps1
-└─ .github/workflows/pages.yml
+├─ .nojekyll
+└─ README.md
 ```
 
 ## 许可
