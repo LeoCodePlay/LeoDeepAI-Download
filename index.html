@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>下载 LeoDeepAI — Windows / macOS / Android</title>
+<meta name="description" content="LeoDeepAI 公开下载入口。直接下载 Windows、macOS 与 Android 安装包，附 SHA-256 校验值与安装说明。本仓库不包含产品源码。">
+<meta name="theme-color" content="#080a0e">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="下载 LeoDeepAI">
+<meta property="og:description" content="Windows / macOS / Android 安装包，附 SHA-256 校验与安装说明。">
+<meta property="og:url" content="https://leocodeplay.github.io/LeoDeepAI-Download/">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/Geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/GeistMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#downloads">跳到下载</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="#top" aria-label="LeoDeepAI 下载首页">
+      <img class="brand-mark" src="assets/logo.svg" alt="" width="17" height="28">
+      <span class="brand-name">LeoDeepAI</span>
+      <span class="brand-slash" aria-hidden="true">/</span>
+      <span class="brand-sub">download</span>
+    </a>
+    <nav class="head-nav" aria-label="主导航">
+      <a href="#downloads">下载</a>
+      <a href="#install">安装</a>
+      <a href="#verify">校验</a>
+      <a href="#about">关于</a>
+      <a class="nav-gh" href="https://github.com/LeoCodePlay/LeoDeepAI-Download" target="_blank" rel="noreferrer">
+        <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        GitHub
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> public release channel</p>
+        <h1>下载 <span class="text-brand">LeoDeepAI</span></h1>
+        <p class="hero-sub">让 AI 直接上手你的服务器</p>
+        <p class="lede">用 SSH 常驻连接远程主机，Agent 在目标环境里真实读写文件、执行命令、搜索代码。选择平台，按安装说明完成首次启动。</p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" id="hero-download" href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_x64-setup.exe">
+            <svg class="ico" viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M10 2.5v10m0 0 3.6-3.6M10 12.5 6.4 8.9M3 14.5v1.8c0 .66.54 1.2 1.2 1.2h11.6c.66 0 1.2-.54 1.2-1.2v-1.8"/></svg>
+            <span class="btn-copy">
+              <span class="btn-label" id="hero-label">下载 Windows 版</span>
+              <span class="btn-meta" id="hero-meta">v0.5.0 · 47.0 MiB · x64</span>
+            </span>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#downloads">全部平台</a>
+        </div>
+
+        <p class="hero-note">Windows 10+ · macOS 12+ · Android 7.0+ <span class="dot-sep" aria-hidden="true">/</span> 安装包未做商业签名，<a href="#install">先看安装说明</a></p>
+
+        <dl class="hero-stats">
+          <div><dt>桌面端</dt><dd>0.5.0</dd></div>
+          <div><dt>Android</dt><dd>0.1.1</dd></div>
+          <div><dt>分发包</dt><dd>7 个</dd></div>
+          <div><dt>校验</dt><dd>SHA-256</dd></div>
+        </dl>
+      </div>
+
+      <aside class="manifest" aria-label="最新版本文件清单">
+        <div class="manifest-bar">
+          <span class="mono">release / stable</span>
+          <span class="status"><span class="status-dot" aria-hidden="true"></span>available</span>
+        </div>
+        <div class="manifest-title">
+          <span class="manifest-product">LeoDeepAI</span>
+          <span class="mono manifest-version">0.5.0</span>
+        </div>
+        <div class="manifest-list">
+          <a href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_x64-setup.exe">
+            <span class="manifest-file">windows-x64<span class="manifest-ext">.exe</span></span>
+            <span class="mono manifest-size">47.0 MiB</span>
+            <svg class="manifest-arrow" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M8 3v8m0 0 3-3M8 11 5 8"/></svg>
+          </a>
+          <a href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_aarch64.dmg">
+            <span class="manifest-file">macos-arm64<span class="manifest-ext">.dmg</span></span>
+            <span class="mono manifest-size">80.0 MiB</span>
+            <svg class="manifest-arrow" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M8 3v8m0 0 3-3M8 11 5 8"/></svg>
+          </a>
+          <a href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_x64.dmg">
+            <span class="manifest-file">macos-x64<span class="manifest-ext">.dmg</span></span>
+            <span class="mono manifest-size">81.4 MiB</span>
+            <svg class="manifest-arrow" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M8 3v8m0 0 3-3M8 11 5 8"/></svg>
+          </a>
+          <a href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.1/LeoDeepAI_0.1.1_arm64-v8a-release.apk">
+            <span class="manifest-file">android-arm64<span class="manifest-ext">.apk</span></span>
+            <span class="mono manifest-size">25.5 MiB</span>
+            <svg class="manifest-arrow" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M8 3v8m0 0 3-3M8 11 5 8"/></svg>
+          </a>
+          <a href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.1/LeoDeepAI_0.1.1_universal-release.apk">
+            <span class="manifest-file">android-universal<span class="manifest-ext">.apk</span></span>
+            <span class="mono manifest-size">69.8 MiB</span>
+            <svg class="manifest-arrow" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M8 3v8m0 0 3-3M8 11 5 8"/></svg>
+          </a>
+        </div>
+        <div class="manifest-foot">
+          <span class="mono">SHA-256</span>
+          <span>每个文件均已计算校验值</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="downloads">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">downloads</p>
+        <h2>选择你的平台</h2>
+        <p class="section-lede">所有安装包都由本仓库的 GitHub Releases 直接提供。每个文件附 SHA-256，下载后可自行核对。</p>
+      </div>
+
+      <div class="platforms">
+        <article class="platform" data-platform="windows">
+          <div class="platform-head">
+            <span class="platform-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M3.5 4.9 10.7 4v7.2H3.5V4.9Zm0 14.2 7.2.9v-7.1H3.5V19.1Zm8.3 1.1 8.7 1.2V12.9h-8.7v7.3Zm0-16.4v7.3h8.7V2.6L11.8 3.8Z"/></svg>
+            </span>
+            <div class="platform-id">
+              <h3>Windows</h3>
+              <p>Windows 10 / 11 · x64</p>
+            </div>
+            <span class="tag tag-current" data-current-tag hidden>当前平台</span>
+          </div>
+          <div class="platform-meta">
+            <span class="tag">stable</span>
+            <span class="mono">v0.5.0</span>
+            <span class="mono platform-size">47.0 MiB</span>
+          </div>
+          <a class="btn btn-primary btn-block" href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_x64-setup.exe" data-primary data-size="47.0 MiB" data-version="v0.5.0">
+            <svg class="ico" viewBox="0 0 20 20" width="17" height="17" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M10 2.5v10m0 0 3.6-3.6M10 12.5 6.4 8.9M3 14.5v1.8c0 .66.54 1.2 1.2 1.2h11.6c.66 0 1.2-.54 1.2-1.2v-1.8"/></svg>
+            下载安装包
+          </a>
+          <ul class="files">
+            <li>
+              <a class="file-link" href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_x64-setup.exe">
+                <span class="file-name mono">LeoDeepAI_0.5.0_x64-setup.exe</span>
+                <span class="file-size mono">47.0 MiB</span>
+              </a>
+              <details class="sha">
+                <summary>SHA-256</summary>
+                <div class="sha-body">
+                  <code>e95a557ebdaafd55c24bf6aec157c210fd7933b9bf9c308cf527f1857d4759cb</code>
+                  <button class="copy-btn" type="button" aria-label="复制 Windows 安装包的 SHA-256" data-copy="e95a557ebdaafd55c24bf6aec157c210fd7933b9bf9c308cf527f1857d4759cb">复制</button>
+                </div>
+              </details>
+            </li>
+          </ul>
+          <p class="platform-note">未做代码签名，首次运行可能触发 SmartScreen 提示。</p>
+        </article>
+
+        <article class="platform" data-platform="macos">
+          <div class="platform-head">
+            <span class="platform-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M16.37 12.62c.02-2.03 1.66-3 1.73-3.05-.94-1.38-2.41-1.57-2.93-1.59-1.25-.13-2.44.73-3.07.73-.63 0-1.61-.71-2.65-.69-1.36.02-2.62.79-3.32 2-1.42 2.46-.36 6.1 1.02 8.1.68.98 1.48 2.07 2.54 2.03 1.02-.04 1.4-.66 2.63-.66 1.23 0 1.58.66 2.65.64 1.09-.02 1.79-1 2.46-1.98.77-1.12 1.09-2.2 1.11-2.26-.02-.01-2.14-.82-2.17-3.27ZM14.19 6.6c.56-.68.94-1.63.84-2.57-.81.03-1.79.54-2.37 1.22-.52.6-.97 1.56-.85 2.48.9.07 1.82-.46 2.38-1.13Z"/></svg>
+            </span>
+            <div class="platform-id">
+              <h3>macOS</h3>
+              <p>macOS 12+ · Apple Silicon / Intel</p>
+            </div>
+            <span class="tag tag-current" data-current-tag hidden>当前平台</span>
+          </div>
+          <div class="platform-meta">
+            <span class="tag">stable</span>
+            <span class="mono">v0.5.0</span>
+            <span class="mono platform-size">80.0 / 81.4 MiB</span>
+          </div>
+          <div class="btn-pair">
+            <a class="btn btn-primary btn-block" href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_aarch64.dmg" data-primary data-size="80.0 MiB" data-version="v0.5.0">
+              <span class="btn-stack"><span>Apple Silicon</span><span class="btn-sub">arm64 · 80.0 MiB</span></span>
+            </a>
+            <a class="btn btn-outline btn-block" href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_x64.dmg">
+              <span class="btn-stack"><span>Intel</span><span class="btn-sub">x64 · 81.4 MiB</span></span>
+            </a>
+          </div>
+          <ul class="files">
+            <li>
+              <a class="file-link" href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_aarch64.dmg">
+                <span class="file-name mono">LeoDeepAI_0.5.0_aarch64.dmg</span>
+                <span class="file-size mono">80.0 MiB</span>
+              </a>
+              <details class="sha">
+                <summary>SHA-256</summary>
+                <div class="sha-body">
+                  <code>b809f1855d74eff590a32bb9fb9176799baff8990da5de6657d4e69202b7767f</code>
+                  <button class="copy-btn" type="button" aria-label="复制 macOS Apple Silicon 安装包的 SHA-256" data-copy="b809f1855d74eff590a32bb9fb9176799baff8990da5de6657d4e69202b7767f">复制</button>
+                </div>
+              </details>
+            </li>
+            <li>
+              <a class="file-link" href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_x64.dmg">
+                <span class="file-name mono">LeoDeepAI_0.5.0_x64.dmg</span>
+                <span class="file-size mono">81.4 MiB</span>
+              </a>
+              <details class="sha">
+                <summary>SHA-256</summary>
+                <div class="sha-body">
+                  <code>602001ae3c084efaae85e6b5380e9e84b26e5c6f0a56181c5e383a668229de26</code>
+                  <button class="copy-btn" type="button" aria-label="复制 macOS Intel 安装包的 SHA-256" data-copy="602001ae3c084efaae85e6b5380e9e84b26e5c6f0a56181c5e383a668229de26">复制</button>
+                </div>
+              </details>
+            </li>
+          </ul>
+          <p class="platform-note">未公证，首次打开需右键 App →「打开」，详见安装说明。</p>
+        </article>
+
+        <article class="platform" data-platform="android">
+          <div class="platform-head">
+            <span class="platform-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M7.2 9.4h9.6v7.2a1.4 1.4 0 0 1-1.4 1.4H8.6a1.4 1.4 0 0 1-1.4-1.4V9.4Zm-2.1 0c.66 0 1.2.54 1.2 1.2v5.2a1.2 1.2 0 0 1-2.4 0v-5.2c0-.66.54-1.2 1.2-1.2Zm13.8 0c.66 0 1.2.54 1.2 1.2v5.2a1.2 1.2 0 0 1-2.4 0v-5.2c0-.66.54-1.2 1.2-1.2ZM9.8 19.4v2a1 1 0 0 0 2 0v-2H9.8Zm2.4 0v2a1 1 0 0 0 2 0v-2h-2ZM8.2 8.5l-1.3-2.2a.35.35 0 0 1 .13-.48.35.35 0 0 1 .48.13l1.32 2.25a6.4 6.4 0 0 1 2.37-.45c.85 0 1.66.16 2.37.45l1.32-2.25a.35.35 0 0 1 .48-.13c.17.1.23.31.13.48L14.18 8.5c1.37.73 2.3 2.05 2.3 3.55H5.9c0-1.5.93-2.82 2.3-3.55Z"/><circle cx="9.4" cy="10.6" r=".75" fill="#080a0e"/><circle cx="13.2" cy="10.6" r=".75" fill="#080a0e"/></svg>
+            </span>
+            <div class="platform-id">
+              <h3>Android</h3>
+              <p>Android 7.0+ · 分 ABI 预览版</p>
+            </div>
+            <span class="tag tag-current" data-current-tag hidden>当前平台</span>
+          </div>
+          <div class="platform-meta">
+            <span class="tag tag-preview">preview</span>
+            <span class="mono">v0.1.1</span>
+            <span class="mono platform-size">25.5 MiB</span>
+          </div>
+          <a class="btn btn-primary btn-block" href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.1/LeoDeepAI_0.1.1_arm64-v8a-release.apk" data-primary data-size="25.5 MiB" data-version="v0.1.1">
+            <svg class="ico" viewBox="0 0 20 20" width="17" height="17" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M10 2.5v10m0 0 3.6-3.6M10 12.5 6.4 8.9M3 14.5v1.8c0 .66.54 1.2 1.2 1.2h11.6c.66 0 1.2-.54 1.2-1.2v-1.8"/></svg>
+            下载 arm64-v8a
+          </a>
+          <a class="btn btn-outline btn-block btn-secondary" href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.1/LeoDeepAI_0.1.1_universal-release.apk">通用包 universal · 69.8 MiB</a>
+          <ul class="files">
+            <li>
+              <a class="file-link" href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.1/LeoDeepAI_0.1.1_arm64-v8a-release.apk">
+                <span class="file-name mono">LeoDeepAI_0.1.1_arm64-v8a-release.apk</span>
+                <span class="file-size mono">25.5 MiB</span>
+              </a>
+              <details class="sha">
+                <summary>SHA-256</summary>
+                <div class="sha-body">
+                  <code>55df19d17d968af18d5c1dc6c2fccba0b7f45e66b4f9921256109e58bb1083e9</code>
+                  <button class="copy-btn" type="button" aria-label="复制 Android arm64-v8a 安装包的 SHA-256" data-copy="55df19d17d968af18d5c1dc6c2fccba0b7f45e66b4f9921256109e58bb1083e9">复制</button>
+                </div>
+              </details>
+            </li>
+            <li>
+              <a class="file-link" href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.1/LeoDeepAI_0.1.1_universal-release.apk">
+                <span class="file-name mono">LeoDeepAI_0.1.1_universal-release.apk</span>
+                <span class="file-size mono">69.8 MiB</span>
+              </a>
+              <details class="sha">
+                <summary>SHA-256</summary>
+                <div class="sha-body">
+                  <code>2810c60e52d1c8528d69299e9bbd8d682a3f07a3aae29e78d66089ce7fffa31b</code>
+                  <button class="copy-btn" type="button" aria-label="复制 Android universal 安装包的 SHA-256" data-copy="2810c60e52d1c8528d69299e9bbd8d682a3f07a3aae29e78d66089ce7fffa31b">复制</button>
+                </div>
+              </details>
+            </li>
+            <li>
+              <a class="file-link" href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.1/LeoDeepAI_0.1.1_armeabi-v7a-release.apk">
+                <span class="file-name mono">LeoDeepAI_0.1.1_armeabi-v7a-release.apk</span>
+                <span class="file-size mono">21.6 MiB</span>
+              </a>
+              <details class="sha">
+                <summary>SHA-256</summary>
+                <div class="sha-body">
+                  <code>534232a6bade5f3dc4c2689c871e7018f30497307cfe4c199ece50b013affd36</code>
+                  <button class="copy-btn" type="button" aria-label="复制 Android armeabi-v7a 安装包的 SHA-256" data-copy="534232a6bade5f3dc4c2689c871e7018f30497307cfe4c199ece50b013affd36">复制</button>
+                </div>
+              </details>
+            </li>
+            <li>
+              <a class="file-link" href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.1/LeoDeepAI_0.1.1_x86_64-release.apk">
+                <span class="file-name mono">LeoDeepAI_0.1.1_x86_64-release.apk</span>
+                <span class="file-size mono">27.9 MiB</span>
+              </a>
+              <details class="sha">
+                <summary>SHA-256</summary>
+                <div class="sha-body">
+                  <code>b218b3a1ef03def1c6b63512af7d1dfc13780384d9f6069f46b7dba5cd38b3da</code>
+                  <button class="copy-btn" type="button" aria-label="复制 Android x86_64 安装包的 SHA-256" data-copy="b218b3a1ef03def1c6b63512af7d1dfc13780384d9f6069f46b7dba5cd38b3da">复制</button>
+                </div>
+              </details>
+            </li>
+          </ul>
+          <p class="platform-note">预览版。后续正式包更换签名时，可能需要先卸载再安装。</p>
+        </article>
+      </div>
+
+      <div class="channel-note">
+        <span class="mono channel-label">CHANNEL</span>
+        <p>桌面端为 0.5.0 稳定版；Android 为 0.1.1 预览版，用于功能验证。下载页不收集任何账户信息，也没有捆绑安装。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="install">
+    <div class="wrap">
+      <div class="section-head section-head-split">
+        <div>
+          <p class="eyebrow">install</p>
+          <h2>安装说明</h2>
+        </div>
+        <p class="section-lede">安装包未做商业代码签名，系统会给出安全提示。下面三步只针对当前应用放行，不关闭系统保护。</p>
+      </div>
+
+      <div class="install-grid">
+        <article class="install-card">
+          <div class="install-head">
+            <span class="mono">01 / Windows</span>
+            <span class="tag">x64</span>
+          </div>
+          <ol class="steps">
+            <li>
+              <span class="step-n mono">1</span>
+              <div>
+                <h3>运行安装程序</h3>
+                <p>双击 <code>LeoDeepAI_0.5.0_x64-setup.exe</code>，按向导完成安装。</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-n mono">2</span>
+              <div>
+                <h3>通过 SmartScreen</h3>
+                <p>若出现「Windows 已保护你的电脑」，点「更多信息」→「仍要运行」。</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-n mono">3</span>
+              <div>
+                <h3>启动并设置服务器</h3>
+                <p>登录页右上角「服务器」可填写并测试云服务地址。</p>
+              </div>
+            </li>
+          </ol>
+        </article>
+
+        <article class="install-card">
+          <div class="install-head">
+            <span class="mono">02 / macOS</span>
+            <span class="tag">arm64 / x64</span>
+          </div>
+          <ol class="steps">
+            <li>
+              <span class="step-n mono">1</span>
+              <div>
+                <h3>选对架构</h3>
+                <p>Apple Silicon（M 系列）选 <code>aarch64.dmg</code>，Intel 选 <code>x64.dmg</code>。可在「关于本机」里确认。</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-n mono">2</span>
+              <div>
+                <h3>拖进应用程序</h3>
+                <p>打开 dmg，把 LeoDeepAI 拖到「应用程序」文件夹。</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-n mono">3</span>
+              <div>
+                <h3>首次打开</h3>
+                <p>在 Finder 里右键 App →「打开」→ 再点「打开」。若仍被拦截，在终端执行 <code>xattr -dr com.apple.quarantine /Applications/LeoDeepAI.app</code>。</p>
+              </div>
+            </li>
+          </ol>
+        </article>
+
+        <article class="install-card">
+          <div class="install-head">
+            <span class="mono">03 / Android</span>
+            <span class="tag tag-preview">preview</span>
+          </div>
+          <ol class="steps">
+            <li>
+              <span class="step-n mono">1</span>
+              <div>
+                <h3>确认 CPU 架构</h3>
+                <p>绝大多数手机选 <code>arm64-v8a</code>；不确定就下 <code>universal</code> 通用包。</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-n mono">2</span>
+              <div>
+                <h3>允许安装未知应用</h3>
+                <p>设置 → 应用 → 特殊权限 → 安装未知应用，给浏览器或文件管理器放行。</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-n mono">3</span>
+              <div>
+                <h3>安装并连接</h3>
+                <p>打开 APK 完成安装。登录页可设置云服务地址，用于连接自建环境。</p>
+              </div>
+            </li>
+          </ol>
+        </article>
+      </div>
+
+      <p class="install-note">
+        <span class="mono">NOTE</span>
+        不登录也能用：桌面端支持自带 API Key 与本地 Ollama；平台模型、签到额度与手机配对需要登录账号。
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="verify">
+    <div class="wrap">
+      <div class="verify-grid">
+        <div class="verify-copy">
+          <p class="eyebrow">integrity</p>
+          <h2>下载后先校验</h2>
+          <p class="section-lede">每个安装包的 SHA-256 都列在下方。哈希不一致说明文件损坏或被替换，请删除后重新下载，不要继续安装。</p>
+          <ul class="check-list">
+            <li><span class="check" aria-hidden="true">✓</span>只从本仓库的 Releases 下载</li>
+            <li><span class="check" aria-hidden="true">✓</span>核对文件名、体积与 SHA-256</li>
+            <li><span class="check" aria-hidden="true">✓</span>不使用来源不明的「加速下载」镜像</li>
+          </ul>
+        </div>
+
+        <div class="code-panel">
+          <div class="code-head">
+            <div class="code-tabs" role="tablist" aria-label="校验命令平台">
+              <button type="button" class="code-tab is-active" id="tab-windows" role="tab" aria-selected="true" aria-controls="verify-panel" data-code-tab="windows">Windows</button>
+              <button type="button" class="code-tab" id="tab-macos" role="tab" aria-selected="false" aria-controls="verify-panel" tabindex="-1" data-code-tab="macos">macOS</button>
+              <button type="button" class="code-tab" id="tab-android" role="tab" aria-selected="false" aria-controls="verify-panel" tabindex="-1" data-code-tab="android">Android</button>
+            </div>
+            <button class="copy-btn code-copy" type="button" data-copy-target="verify-code">复制命令</button>
+          </div>
+          <pre class="code-body" id="verify-panel" role="tabpanel" aria-labelledby="tab-windows" tabindex="0"><code id="verify-code">certutil -hashfile "LeoDeepAI_0.5.0_x64-setup.exe" SHA256</code></pre>
+          <p class="code-hint mono" id="verify-hint">在安装包所在目录打开命令提示符后执行</p>
+        </div>
+      </div>
+
+      <details class="hash-table">
+        <summary>查看全部 7 个文件的 SHA-256</summary>
+        <div class="table-scroll" role="region" aria-label="全部安装包的 SHA-256 表" tabindex="0">
+          <table>
+            <thead>
+              <tr><th>平台</th><th>文件</th><th>大小</th><th>SHA-256</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Windows x64</td><td class="mono">LeoDeepAI_0.5.0_x64-setup.exe</td><td class="mono">47.0 MiB</td><td class="mono hash">e95a557ebdaafd55c24bf6aec157c210fd7933b9bf9c308cf527f1857d4759cb</td></tr>
+              <tr><td>macOS arm64</td><td class="mono">LeoDeepAI_0.5.0_aarch64.dmg</td><td class="mono">80.0 MiB</td><td class="mono hash">b809f1855d74eff590a32bb9fb9176799baff8990da5de6657d4e69202b7767f</td></tr>
+              <tr><td>macOS x64</td><td class="mono">LeoDeepAI_0.5.0_x64.dmg</td><td class="mono">81.4 MiB</td><td class="mono hash">602001ae3c084efaae85e6b5380e9e84b26e5c6f0a56181c5e383a668229de26</td></tr>
+              <tr><td>Android arm64-v8a</td><td class="mono">LeoDeepAI_0.1.1_arm64-v8a-release.apk</td><td class="mono">25.5 MiB</td><td class="mono hash">55df19d17d968af18d5c1dc6c2fccba0b7f45e66b4f9921256109e58bb1083e9</td></tr>
+              <tr><td>Android armeabi-v7a</td><td class="mono">LeoDeepAI_0.1.1_armeabi-v7a-release.apk</td><td class="mono">21.6 MiB</td><td class="mono hash">534232a6bade5f3dc4c2689c871e7018f30497307cfe4c199ece50b013affd36</td></tr>
+              <tr><td>Android x86_64</td><td class="mono">LeoDeepAI_0.1.1_x86_64-release.apk</td><td class="mono">27.9 MiB</td><td class="mono hash">b218b3a1ef03def1c6b63512af7d1dfc13780384d9f6069f46b7dba5cd38b3da</td></tr>
+              <tr><td>Android universal</td><td class="mono">LeoDeepAI_0.1.1_universal-release.apk</td><td class="mono">69.8 MiB</td><td class="mono hash">2810c60e52d1c8528d69299e9bbd8d682a3f07a3aae29e78d66089ce7fffa31b</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="changelog">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">changelog</p>
+        <h2>版本记录</h2>
+        <p class="section-lede">这里只记录对外分发的版本。应用内的完整变更见每次 Release 的说明。</p>
+      </div>
+
+      <div class="timeline">
+        <article class="release">
+          <div class="release-side">
+            <span class="mono release-date">2026-10-29</span>
+            <span class="tag">stable</span>
+          </div>
+          <div class="release-body">
+            <h3>桌面端 0.5.0</h3>
+            <ul>
+              <li>产品名与安装包统一为 <strong>LeoDeepAI</strong>，桌面端 identifier 迁移到 <code>com.leodeepai.desktop</code>。</li>
+              <li>登录页新增「服务器」入口，可设置并测试云服务地址。</li>
+              <li>修复桌面端登录后中继会话未同步、手机端误报「电脑端不在线」的问题。</li>
+              <li>首次启动自动迁移旧版数据目录，旧目录保留，可回退。</li>
+            </ul>
+            <p class="release-links">
+              <a href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/tag/v0.5.0">Release 说明</a>
+              <span aria-hidden="true">·</span>
+              <a href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_x64-setup.exe">Windows x64</a>
+              <span aria-hidden="true">·</span>
+              <a href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_aarch64.dmg">macOS arm64</a>
+              <span aria-hidden="true">·</span>
+              <a href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_x64.dmg">macOS x64</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="release">
+          <div class="release-side">
+            <span class="mono release-date">2026-10-27</span>
+            <span class="tag tag-preview">preview</span>
+          </div>
+          <div class="release-body">
+            <h3>Android 0.1.1</h3>
+            <ul>
+              <li>提供 arm64-v8a、armeabi-v7a、x86_64 三个分 ABI 包，以及 universal 通用包。</li>
+              <li>支持在登录页设置云服务地址，连接自建环境。</li>
+              <li>面向 Android 7.0 及以上；当前为预览版，正式包可能需要卸载后重装。</li>
+            </ul>
+            <p class="release-links">
+              <a href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/tag/android-v0.1.1">Release 说明</a>
+              <span aria-hidden="true">·</span>
+              <a href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.1/LeoDeepAI_0.1.1_arm64-v8a-release.apk">arm64-v8a</a>
+              <span aria-hidden="true">·</span>
+              <a href="https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.1/LeoDeepAI_0.1.1_universal-release.apk">universal</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <p class="eyebrow">open source</p>
+        <h2>为什么这个仓库是公开的</h2>
+        <p class="section-lede">下载入口应该可审计、可镜像、也可以自行部署。所以这个仓库开源的是<strong>下载页本身</strong>，而不是 LeoDeepAI 的产品源码。</p>
+        <div class="callout">
+          <span class="mono callout-label">SCOPE</span>
+          <p>本仓库不包含服务端、桌面端、移动端与浏览器扩展的源代码，也不包含签名证书或任何密钥。</p>
+        </div>
+        <ul class="about-list">
+          <li><strong>页面代码</strong>：MIT 许可，可自由复制、修改、自部署。</li>
+          <li><strong>安装包</strong>：免费使用，但为闭源软件，版权归作者所有。</li>
+          <li><strong>字体</strong>：Geist / Geist Mono，SIL Open Font License 1.1。</li>
+        </ul>
+      </div>
+
+      <div class="about-links">
+        <a class="link-card" href="https://github.com/LeoCodePlay/LeoDeepAI-Download" target="_blank" rel="noreferrer">
+          <span class="mono link-kicker">repository</span>
+          <h3>LeoDeepAI-Download</h3>
+          <p>下载页源码、发布说明与全部安装包。</p>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="link-card" href="https://github.com/LeoCodePlay/LeoDeepAI-Download/issues" target="_blank" rel="noreferrer">
+          <span class="mono link-kicker">support</span>
+          <h3>Issues</h3>
+          <p>下载失败、校验不符或安装问题，在这里反馈。</p>
+          <span class="link-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div class="foot-brand">
+      <img src="assets/logo.svg" alt="" width="13" height="22">
+      <span>LeoDeepAI</span>
+    </div>
+    <p>© 2026 LeoDeepAI · 页面代码 MIT · 安装包为闭源软件</p>
+    <div class="foot-links">
+      <a href="#top">回到顶部</a>
+      <a href="https://github.com/LeoCodePlay/LeoDeepAI-Download" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>
