@@ -33,8 +33,12 @@ if (-not (Get-Command gh -ErrorAction SilentlyContinue)) {
     throw "GitHub CLI (gh) is required: https://cli.github.com/"
 }
 
-$existing = gh release view $Tag --repo $Repo 2>$null
-if ($LASTEXITCODE -eq 0) {
+$previousEap = $ErrorActionPreference
+$ErrorActionPreference = "Continue"
+$null = gh release view $Tag --repo $Repo 2>$null
+$releaseExists = ($LASTEXITCODE -eq 0)
+$ErrorActionPreference = $previousEap
+if ($releaseExists) {
     throw "Release $Tag already exists in $Repo. Bump the tag or delete the old release first."
 }
 
@@ -75,9 +79,12 @@ if ($Prerelease) {
 
 $ghArgs += $resolved
 
+$ErrorActionPreference = "Continue"
 & gh @ghArgs
-if ($LASTEXITCODE -ne 0) {
-    throw "gh release create failed with exit code $LASTEXITCODE."
+$releaseExit = $LASTEXITCODE
+$ErrorActionPreference = $previousEap
+if ($releaseExit -ne 0) {
+    throw "gh release create failed with exit code $releaseExit."
 }
 
 Write-Host ""

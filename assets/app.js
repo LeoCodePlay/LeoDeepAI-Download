@@ -20,15 +20,15 @@
   var copy = {
     windows: {
       label: "下载 Windows 版",
-      meta: "v0.5.0 · 47.0 MiB · x64"
+      meta: "v0.5.1 · 47.1 MiB · x64"
     },
     macos: {
       label: "下载 macOS 版",
       meta: "v0.5.0 · Apple Silicon · 80.0 MiB"
     },
     android: {
-      label: "下载 Android 版",
-      meta: "v0.1.1 · arm64-v8a · 25.5 MiB"
+      label: "下载 Android Debug 版",
+      meta: "v0.1.2 · universal · 173.3 MiB"
     }
   };
 
@@ -125,7 +125,7 @@
 
   var snippets = {
     windows: {
-      code: 'certutil -hashfile "LeoDeepAI_0.5.0_x64-setup.exe" SHA256',
+      code: 'certutil -hashfile "LeoDeepAI_0.5.1_x64-setup.exe" SHA256',
       hint: "在安装包所在目录打开命令提示符后执行"
     },
     macos: {
@@ -133,7 +133,7 @@
       hint: "在终端执行;文件名换成你实际下载的那个"
     },
     android: {
-      code: "sha256sum LeoDeepAI_0.1.1_arm64-v8a-release.apk",
+      code: "sha256sum LeoDeepAI_0.1.2_universal-debug.apk",
       hint: "在 Termux 中执行,或把文件拷到电脑后用对应系统的命令"
     }
   };

@@ -10,19 +10,16 @@ LeoDeepAI 的公开下载入口。这个仓库只托管**下载页**和**安装�
 
 | 平台 | 文件 | 大小 | SHA-256 |
 | --- | --- | --- | --- |
-| Windows x64 | [`LeoDeepAI_0.5.0_x64-setup.exe`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_x64-setup.exe) | 47.0 MiB | `e95a557ebdaafd55c24bf6aec157c210fd7933b9bf9c308cf527f1857d4759cb` |
+| Windows x64 | [`LeoDeepAI_0.5.1_x64-setup.exe`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.1/LeoDeepAI_0.5.1_x64-setup.exe) | 47.1 MiB | `e7a06d8b619d7e606c8514dd901d463adc6de701f3733098286358c8de210375` |
 | macOS Apple Silicon | [`LeoDeepAI_0.5.0_aarch64.dmg`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_aarch64.dmg) | 80.0 MiB | `b809f1855d74eff590a32bb9fb9176799baff8990da5de6657d4e69202b7767f` |
 | macOS Intel | [`LeoDeepAI_0.5.0_x64.dmg`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_x64.dmg) | 81.4 MiB | `602001ae3c084efaae85e6b5380e9e84b26e5c6f0a56181c5e383a668229de26` |
-| Android arm64-v8a | [`LeoDeepAI_0.1.1_arm64-v8a-release.apk`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.1/LeoDeepAI_0.1.1_arm64-v8a-release.apk) | 25.5 MiB | `55df19d17d968af18d5c1dc6c2fccba0b7f45e66b4f9921256109e58bb1083e9` |
-| Android armeabi-v7a | [`LeoDeepAI_0.1.1_armeabi-v7a-release.apk`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.1/LeoDeepAI_0.1.1_armeabi-v7a-release.apk) | 21.6 MiB | `534232a6bade5f3dc4c2689c871e7018f30497307cfe4c199ece50b013affd36` |
-| Android x86_64 | [`LeoDeepAI_0.1.1_x86_64-release.apk`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.1/LeoDeepAI_0.1.1_x86_64-release.apk) | 27.9 MiB | `b218b3a1ef03def1c6b63512af7d1dfc13780384d9f6069f46b7dba5cd38b3da` |
-| Android universal | [`LeoDeepAI_0.1.1_universal-release.apk`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.1/LeoDeepAI_0.1.1_universal-release.apk) | 69.8 MiB | `2810c60e52d1c8528d69299e9bbd8d682a3f07a3aae29e78d66089ce7fffa31b` |
+| Android universal debug | [`LeoDeepAI_0.1.2_universal-debug.apk`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.2-debug/LeoDeepAI_0.1.2_universal-debug.apk) | 173.3 MiB | `8f96a7ce565262f6cb87a053867b8a00c44dff086f67117e4a0f48e2b19cbd27` |
 
-桌面端为 0.5.0 稳定版；Android 为 0.1.1 预览版，后续正式包可能需要先卸载旧版。
+Windows 桌面端为 0.5.1；macOS 0.5.1 与 Linux 构建稍后发布，当前 macOS 仍为 0.5.0。Android 为 0.1.2 debug 测试包，不要日常使用。
 
 ## 安装
 
-**Windows**：运行 `LeoDeepAI_0.5.0_x64-setup.exe`。安装包未做代码签名，SmartScreen 提示时点「更多信息」→「仍要运行」。
+**Windows**：运行 `LeoDeepAI_0.5.1_x64-setup.exe`。安装包未做代码签名，SmartScreen 提示时点「更多信息」→「仍要运行」。
 
 **macOS**：Apple Silicon 选 `aarch64.dmg`，Intel 选 `x64.dmg`。打开 dmg 拖进「应用程序」，首次启动在 Finder 里右键 App →「打开」。若仍被 Gatekeeper 拦截：
 
@@ -30,7 +27,7 @@ LeoDeepAI 的公开下载入口。这个仓库只托管**下载页**和**安装�
 xattr -dr com.apple.quarantine /Applications/LeoDeepAI.app
 ```
 
-**Android**：大多数手机选 `arm64-v8a`，不确定就下 `universal`。安装前需要在系统设置里允许浏览器或文件管理器「安装未知应用」。Android 最低版本为 7.0（API 24）。
+**Android**：下载 universal debug 包（约 173 MiB），安装前在系统设置里允许浏览器或文件管理器「安装未知应用」。Android 最低版本为 7.0（API 24）。包名是 `com.leodeepai.app`，用 Android Debug 签名，仅用于联调。
 
 桌面端不登录也能使用自己填的 API Key 或本地 Ollama；平台模型、签到额度与手机配对需要登录账号。
 
@@ -40,7 +37,7 @@ xattr -dr com.apple.quarantine /Applications/LeoDeepAI.app
 
 ```powershell
 # Windows
-certutil -hashfile "LeoDeepAI_0.5.0_x64-setup.exe" SHA256
+certutil -hashfile "LeoDeepAI_0.5.1_x64-setup.exe" SHA256
 ```
 
 ```bash
@@ -48,7 +45,7 @@ certutil -hashfile "LeoDeepAI_0.5.0_x64-setup.exe" SHA256
 shasum -a 256 ~/Downloads/LeoDeepAI_0.5.0_aarch64.dmg
 
 # Linux / Termux
-sha256sum LeoDeepAI_0.1.1_arm64-v8a-release.apk
+sha256sum LeoDeepAI_0.1.2_universal-debug.apk
 ```
 
 ## 这个仓库是什么
@@ -101,9 +98,9 @@ python -m http.server 8080
    Android 预览版用 `-Prerelease`，避免它被 GitHub 标成 latest release：
 
    ```powershell
-   .\scripts\publish-release.ps1 -Tag android-v0.1.2 -Title "LeoDeepAI Android 0.1.2" `
-     -NotesFile docs/release-notes-android-0.1.2.md -Prerelease `
-     ..\release\LeoDeepAI_0.1.2_arm64-v8a-release.apk
+   .\scripts\publish-release.ps1 -Tag android-v0.1.2-debug -Title "LeoDeepAI Android 0.1.2 (Debug)" `
+     -NotesFile docs/release-notes-android-0.1.2-debug.md -Prerelease `
+     ..\release\LeoDeepAI_0.1.2_universal-debug.apk
    ```
 
 3. 更新 `index.html` 里的版本号、下载链接、大小、SHA-256 和「版本记录」，提交后 Pages 会自动重新部署。
