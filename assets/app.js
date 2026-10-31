@@ -11,6 +11,9 @@
     platform = "macos";
   } else if (/Windows/i.test(ua)) {
     platform = "windows";
+  } else if (/Linux|X11/i.test(ua)) {
+    // 放在 Windows 之后:Android UA 里也带 Linux,前面已经先判掉了
+    platform = "linux";
   }
 
   var heroLink = document.getElementById("hero-download");
@@ -20,15 +23,19 @@
   var copy = {
     windows: {
       label: "下载 Windows 版",
-      meta: "v0.5.2 · 47.1 MiB · x64"
+      meta: "v0.5.3 · 47.1 MiB · x64"
     },
     macos: {
       label: "下载 macOS 版",
-      meta: "v0.5.0 · Apple Silicon · 80.0 MiB"
+      meta: "v0.5.3 · Apple Silicon · 80.1 MiB"
+    },
+    linux: {
+      label: "下载 Linux 版",
+      meta: "v0.5.3 · AppImage · 152.6 MiB"
     },
     android: {
-      label: "下载 Android Debug 版",
-      meta: "v0.1.2 · universal · 173.3 MiB"
+      label: "下载 Android 版",
+      meta: "v0.1.3 · universal · 70.4 MiB"
     }
   };
 
@@ -129,11 +136,15 @@
       hint: "在安装包所在目录打开命令提示符后执行"
     },
     macos: {
-      code: "shasum -a 256 ~/Downloads/LeoDeepAI_0.5.0_aarch64.dmg",
+      code: "shasum -a 256 ~/Downloads/LeoDeepAI_0.5.3_aarch64.dmg",
       hint: "在终端执行;文件名换成你实际下载的那个"
     },
+    linux: {
+      code: "sha256sum LeoDeepAI_0.5.3_amd64.AppImage",
+      hint: "在终端执行;下的是 deb 就把文件名换成 .deb"
+    },
     android: {
-      code: "sha256sum LeoDeepAI_0.1.2_universal-debug.apk",
+      code: "sha256sum LeoDeepAI_0.1.3_universal.apk",
       hint: "在 Termux 中执行,或把文件拷到电脑后用对应系统的命令"
     }
   };

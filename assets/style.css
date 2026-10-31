@@ -753,7 +753,7 @@ h1 {
 /* --------------------------------------------------------------- platforms */
 .platforms {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
   align-items: stretch;
 }
@@ -1008,7 +1008,7 @@ h1 {
 /* ----------------------------------------------------------------- install */
 .install-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -1493,12 +1493,9 @@ tr:last-child td {
     gap: 48px;
   }
 
+  /* 四张平台卡片在窄屏排成 2×2(不再让某一张跨整行,否则会空出半格) */
   .platforms {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .platform[data-platform="android"] {
-    grid-column: 1 / -1;
   }
 
   .install-grid {

@@ -10,16 +10,18 @@ LeoDeepAI 的公开下载入口。这个仓库只托管**下载页**和**安装�
 
 | 平台 | 文件 | 大小 | SHA-256 |
 | --- | --- | --- | --- |
-| Windows x64 | [`LeoDeepAI_0.5.2_x64-setup.exe`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.2/LeoDeepAI_0.5.2_x64-setup.exe) | 47.1 MiB | `72580911e0deae8c17c15334d421eccfe07c048c25ce503b65d1e28e6c00dfc5` |
-| macOS Apple Silicon | [`LeoDeepAI_0.5.0_aarch64.dmg`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_aarch64.dmg) | 80.0 MiB | `b809f1855d74eff590a32bb9fb9176799baff8990da5de6657d4e69202b7767f` |
-| macOS Intel | [`LeoDeepAI_0.5.0_x64.dmg`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.0/LeoDeepAI_0.5.0_x64.dmg) | 81.4 MiB | `602001ae3c084efaae85e6b5380e9e84b26e5c6f0a56181c5e383a668229de26` |
-| Android universal debug | [`LeoDeepAI_0.1.2_universal-debug.apk`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.2-debug/LeoDeepAI_0.1.2_universal-debug.apk) | 173.3 MiB | `8f96a7ce565262f6cb87a053867b8a00c44dff086f67117e4a0f48e2b19cbd27` |
+| Windows x64 | [`LeoDeepAI_0.5.3_x64-setup.exe`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.3/LeoDeepAI_0.5.3_x64-setup.exe) | 47.1 MiB | `72a82dd02bd0c4a051ab71358fc49796393301ab8c5e6749a6c97e415ad6f0c9` |
+| macOS Apple Silicon | [`LeoDeepAI_0.5.3_aarch64.dmg`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.3/LeoDeepAI_0.5.3_aarch64.dmg) | 80.1 MiB | `22436b8aa793a09ac710df2933957b06cc58c3557d2972cee2066efe2b17d5bb` |
+| macOS Intel | [`LeoDeepAI_0.5.3_x64.dmg`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.3/LeoDeepAI_0.5.3_x64.dmg) | 81.5 MiB | `6a1ff849acf019e499fe74bc804a6fbe51a598d70ec130112c9c29f0c51fb44e` |
+| Linux x64 (deb) | [`LeoDeepAI_0.5.3_amd64.deb`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.3/LeoDeepAI_0.5.3_amd64.deb) | 88.4 MiB | `90bfc223d357996583531bebc62fa33ea61c553450238eaac6f93c75789fd8c7` |
+| Linux x64 (AppImage) | [`LeoDeepAI_0.5.3_amd64.AppImage`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.3/LeoDeepAI_0.5.3_amd64.AppImage) | 152.6 MiB | `ae40ffc46771d7c009d5b6451a7a7f952f833e8375b0af498f7cb4bea082a087` |
+| Android universal | [`LeoDeepAI_0.1.3_universal.apk`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.3/LeoDeepAI_0.1.3_universal.apk) | 70.4 MiB | `88d7fc840d68dd1730bddbcbd10d23f8571d9daa796ed3cd50f45ee417107ac4` |
 
-Windows 桌面端为 0.5.2；macOS 仍为 0.5.0，macOS 与 Linux 新版本稍后发布。Android 为 0.1.2 debug 测试包，不要日常使用。
+桌面端 Windows / macOS / Linux 均为 0.5.3；Android 为 0.1.3 正式签名包（versionCode 4，从旧 debug 包升级需先卸载）。应用内「检查更新」当前直接读本仓库的 GitHub Releases。
 
 ## 安装
 
-**Windows**：运行 `LeoDeepAI_0.5.2_x64-setup.exe`。安装包未做代码签名，SmartScreen 提示时点「更多信息」→「仍要运行」。
+**Windows**：运行 `LeoDeepAI_0.5.3_x64-setup.exe`。安装包未做代码签名，SmartScreen 提示时点「更多信息」→「仍要运行」。
 
 **macOS**：Apple Silicon 选 `aarch64.dmg`，Intel 选 `x64.dmg`。打开 dmg 拖进「应用程序」，首次启动在 Finder 里右键 App →「打开」。若仍被 Gatekeeper 拦截：
 
@@ -27,7 +29,9 @@ Windows 桌面端为 0.5.2；macOS 仍为 0.5.0，macOS 与 Linux 新版本稍�
 xattr -dr com.apple.quarantine /Applications/LeoDeepAI.app
 ```
 
-**Android**：下载 universal debug 包（约 173 MiB），安装前在系统设置里允许浏览器或文件管理器「安装未知应用」。Android 最低版本为 7.0（API 24）。包名是 `com.leodeepai.app`，用 Android Debug 签名，仅用于联调。
+**Linux**：deb 用 `sudo apt install ./LeoDeepAI_0.5.3_amd64.deb`（会声明 webkit2gtk 等依赖）；AppImage 用 `chmod +x LeoDeepAI_0.5.3_amd64.AppImage && ./LeoDeepAI_0.5.3_amd64.AppImage`。缺少运行库时装 `libwebkit2gtk-4.1-0` 与 `libgtk-3-0`，Wayland 下异常可用 `GDK_BACKEND=x11` 启动。
+
+**Android**：下载 universal 包（约 70 MiB，含三种 ABI），安装前在系统设置里允许浏览器或文件管理器「安装未知应用」。最低版本 Android 7.0（API 24）。包名 `com.leodeepai.app`，0.1.3 起为正式签名（`CN=LeoDeepAI`），从旧 debug 包升级需先卸载。
 
 桌面端不登录也能使用自己填的 API Key 或本地 Ollama；平台模型、签到额度与手机配对需要登录账号。
 
@@ -37,15 +41,18 @@ xattr -dr com.apple.quarantine /Applications/LeoDeepAI.app
 
 ```powershell
 # Windows
-certutil -hashfile "LeoDeepAI_0.5.2_x64-setup.exe" SHA256
+certutil -hashfile "LeoDeepAI_0.5.3_x64-setup.exe" SHA256
 ```
 
 ```bash
 # macOS
-shasum -a 256 ~/Downloads/LeoDeepAI_0.5.0_aarch64.dmg
+shasum -a 256 ~/Downloads/LeoDeepAI_0.5.3_aarch64.dmg
 
-# Linux / Termux
-sha256sum LeoDeepAI_0.1.2_universal-debug.apk
+# Linux
+sha256sum LeoDeepAI_0.5.3_amd64.AppImage
+
+# Android
+sha256sum LeoDeepAI_0.1.3_universal.apk
 ```
 
 ## 这个仓库是什么
