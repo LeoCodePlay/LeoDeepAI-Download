@@ -20,7 +20,7 @@
   var copy = {
     windows: {
       label: "下载 Windows 版",
-      meta: "v0.5.1 · 47.1 MiB · x64"
+      meta: "v0.5.2 · 47.1 MiB · x64"
     },
     macos: {
       label: "下载 macOS 版",
@@ -125,7 +125,7 @@
 
   var snippets = {
     windows: {
-      code: 'certutil -hashfile "LeoDeepAI_0.5.1_x64-setup.exe" SHA256',
+      code: 'certutil -hashfile "LeoDeepAI_0.5.2_x64-setup.exe" SHA256',
       hint: "在安装包所在目录打开命令提示符后执行"
     },
     macos: {
