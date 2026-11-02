@@ -25,10 +25,10 @@
   var heroMeta = doc.getElementById("hero-meta");
 
   var copy = {
-    windows: { label: "下载 Windows 版", meta: "v0.5.3 · 47.1 MiB · x64" },
-    macos: { label: "下载 macOS 版", meta: "v0.5.3 · Apple Silicon · 80.1 MiB" },
-    linux: { label: "下载 Linux 版", meta: "v0.5.3 · AppImage · 152.6 MiB" },
-    android: { label: "下载 Android 版", meta: "v0.1.3 · universal · 70.4 MiB" }
+    windows: { label: "下载 Windows 版", meta: "v0.6.0 · 47.1 MiB · x64" },
+    macos: { label: "下载 macOS 版", meta: "v0.6.0 · Apple Silicon · 80.1 MiB" },
+    linux: { label: "下载 Linux 版", meta: "v0.6.0 · AppImage · 152.6 MiB" },
+    android: { label: "下载 Android 版", meta: "v0.1.4 · universal · 70.4 MiB" }
   };
 
   if (platform && copy[platform]) {
@@ -204,19 +204,19 @@
   /* -------------------------------------------------------- 校验命令 */
   var snippets = {
     windows: {
-      code: 'certutil -hashfile "LeoDeepAI_0.5.3_x64-setup.exe" SHA256',
+      code: 'certutil -hashfile "LeoDeepAI_0.6.0_x64-setup.exe" SHA256',
       hint: "在安装包所在目录打开命令提示符后执行"
     },
     macos: {
-      code: "shasum -a 256 ~/Downloads/LeoDeepAI_0.5.3_aarch64.dmg",
+      code: "shasum -a 256 ~/Downloads/LeoDeepAI_0.6.0_aarch64.dmg",
       hint: "在终端执行;文件名换成你实际下载的那个"
     },
     linux: {
-      code: "sha256sum LeoDeepAI_0.5.3_amd64.AppImage",
+      code: "sha256sum LeoDeepAI_0.6.0_amd64.AppImage",
       hint: "在终端执行;下的是 deb 就把文件名换成 .deb"
     },
     android: {
-      code: "sha256sum LeoDeepAI_0.1.3_universal.apk",
+      code: "sha256sum LeoDeepAI_0.1.4_universal.apk",
       hint: "在 Termux 中执行,或把文件拷到电脑后用对应系统的命令"
     }
   };

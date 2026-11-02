@@ -10,18 +10,18 @@ LeoDeepAI 的公开下载入口。这个仓库只托管**下载页**和**安装�
 
 | 平台 | 文件 | 大小 | SHA-256 |
 | --- | --- | --- | --- |
-| Windows x64 | [`LeoDeepAI_0.5.3_x64-setup.exe`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.3/LeoDeepAI_0.5.3_x64-setup.exe) | 47.1 MiB | `72a82dd02bd0c4a051ab71358fc49796393301ab8c5e6749a6c97e415ad6f0c9` |
-| macOS Apple Silicon | [`LeoDeepAI_0.5.3_aarch64.dmg`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.3/LeoDeepAI_0.5.3_aarch64.dmg) | 80.1 MiB | `22436b8aa793a09ac710df2933957b06cc58c3557d2972cee2066efe2b17d5bb` |
-| macOS Intel | [`LeoDeepAI_0.5.3_x64.dmg`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.3/LeoDeepAI_0.5.3_x64.dmg) | 81.5 MiB | `6a1ff849acf019e499fe74bc804a6fbe51a598d70ec130112c9c29f0c51fb44e` |
-| Linux x64 (deb) | [`LeoDeepAI_0.5.3_amd64.deb`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.3/LeoDeepAI_0.5.3_amd64.deb) | 88.4 MiB | `90bfc223d357996583531bebc62fa33ea61c553450238eaac6f93c75789fd8c7` |
-| Linux x64 (AppImage) | [`LeoDeepAI_0.5.3_amd64.AppImage`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.5.3/LeoDeepAI_0.5.3_amd64.AppImage) | 152.6 MiB | `ae40ffc46771d7c009d5b6451a7a7f952f833e8375b0af498f7cb4bea082a087` |
-| Android universal | [`LeoDeepAI_0.1.3_universal.apk`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.3/LeoDeepAI_0.1.3_universal.apk) | 70.4 MiB | `88d7fc840d68dd1730bddbcbd10d23f8571d9daa796ed3cd50f45ee417107ac4` |
+| Windows x64 | [`LeoDeepAI_0.6.0_x64-setup.exe`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.6.0/LeoDeepAI_0.6.0_x64-setup.exe) | 47.1 MiB | `7817fc4c73ab6f4472bc8696b5c92b956bd7a6076e3b4042b87d2eadabe819b0` |
+| macOS Apple Silicon | [`LeoDeepAI_0.6.0_aarch64.dmg`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.6.0/LeoDeepAI_0.6.0_aarch64.dmg) | 80.1 MiB | `919609db11e1a148f1b5e2c7ab534afe31bdf1260a8db58d0022170dc05aa26b` |
+| macOS Intel | [`LeoDeepAI_0.6.0_x64.dmg`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.6.0/LeoDeepAI_0.6.0_x64.dmg) | 81.5 MiB | `e951dffe5923ece475ae487f9380232a1e98e7c5b447c6b7798961299134c99b` |
+| Linux x64 (deb) | [`LeoDeepAI_0.6.0_amd64.deb`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.6.0/LeoDeepAI_0.6.0_amd64.deb) | 88.4 MiB | `0b04ff4a7f51b90eb79a47d7eedcf7d891c66bf5a6ed9dbee169d7fb2d49f963` |
+| Linux x64 (AppImage) | [`LeoDeepAI_0.6.0_amd64.AppImage`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.6.0/LeoDeepAI_0.6.0_amd64.AppImage) | 152.6 MiB | `d9ae4914859e47f2d4d77fbca40e69d7488caf6ece7b63dea34e5250f1cdca81` |
+| Android universal | [`LeoDeepAI_0.1.4_universal.apk`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v0.1.4/LeoDeepAI_0.1.4_universal.apk) | 70.4 MiB | `0184f00d4b23ec8561210f20237a59c46a1afa9feb3d86e2abb152c6d8d1c578` |
 
-桌面端 Windows / macOS / Linux 均为 0.5.3；Android 为 0.1.3 正式签名包（versionCode 4，从旧 debug 包升级需先卸载）。应用内「检查更新」当前直接读本仓库的 GitHub Releases。
+桌面端 Windows / macOS / Linux 均为 0.6.0；Android 为 0.1.4 正式签名包（versionCode 5，从旧 debug 包升级需先卸载）。应用内「检查更新」当前直接读本仓库的 GitHub Releases。
 
 ## 安装
 
-**Windows**：运行 `LeoDeepAI_0.5.3_x64-setup.exe`。安装包未做代码签名，SmartScreen 提示时点「更多信息」→「仍要运行」。
+**Windows**：运行 `LeoDeepAI_0.6.0_x64-setup.exe`。安装包未做代码签名，SmartScreen 提示时点「更多信息」→「仍要运行」。
 
 **macOS**：Apple Silicon 选 `aarch64.dmg`，Intel 选 `x64.dmg`。打开 dmg 拖进「应用程序」，首次启动在 Finder 里右键 App →「打开」。若仍被 Gatekeeper 拦截：
 
@@ -29,7 +29,7 @@ LeoDeepAI 的公开下载入口。这个仓库只托管**下载页**和**安装�
 xattr -dr com.apple.quarantine /Applications/LeoDeepAI.app
 ```
 
-**Linux**：deb 用 `sudo apt install ./LeoDeepAI_0.5.3_amd64.deb`（会声明 webkit2gtk 等依赖）；AppImage 用 `chmod +x LeoDeepAI_0.5.3_amd64.AppImage && ./LeoDeepAI_0.5.3_amd64.AppImage`。缺少运行库时装 `libwebkit2gtk-4.1-0` 与 `libgtk-3-0`，Wayland 下异常可用 `GDK_BACKEND=x11` 启动。
+**Linux**：deb 用 `sudo apt install ./LeoDeepAI_0.6.0_amd64.deb`（会声明 webkit2gtk 等依赖）；AppImage 用 `chmod +x LeoDeepAI_0.6.0_amd64.AppImage && ./LeoDeepAI_0.6.0_amd64.AppImage`。缺少运行库时装 `libwebkit2gtk-4.1-0` 与 `libgtk-3-0`，Wayland 下异常可用 `GDK_BACKEND=x11` 启动。
 
 **Android**：下载 universal 包（约 70 MiB，含三种 ABI），安装前在系统设置里允许浏览器或文件管理器「安装未知应用」。最低版本 Android 7.0（API 24）。包名 `com.leodeepai.app`，0.1.3 起为正式签名（`CN=LeoDeepAI`），从旧 debug 包升级需先卸载。
 
@@ -41,18 +41,18 @@ xattr -dr com.apple.quarantine /Applications/LeoDeepAI.app
 
 ```powershell
 # Windows
-certutil -hashfile "LeoDeepAI_0.5.3_x64-setup.exe" SHA256
+certutil -hashfile "LeoDeepAI_0.6.0_x64-setup.exe" SHA256
 ```
 
 ```bash
 # macOS
-shasum -a 256 ~/Downloads/LeoDeepAI_0.5.3_aarch64.dmg
+shasum -a 256 ~/Downloads/LeoDeepAI_0.6.0_aarch64.dmg
 
 # Linux
-sha256sum LeoDeepAI_0.5.3_amd64.AppImage
+sha256sum LeoDeepAI_0.6.0_amd64.AppImage
 
 # Android
-sha256sum LeoDeepAI_0.1.3_universal.apk
+sha256sum LeoDeepAI_0.1.4_universal.apk
 ```
 
 ## 这个仓库是什么
