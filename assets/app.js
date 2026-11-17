@@ -25,10 +25,10 @@
   var heroMeta = doc.getElementById("hero-meta");
 
   var copy = {
-    windows: { label: "下载 Windows 版", meta: "v0.6.0 · 47.1 MiB · x64" },
+    windows: { label: "下载 Windows 版", meta: "v0.6.4 · 47.2 MiB · x64" },
     macos: { label: "下载 macOS 版", meta: "v0.6.0 · Apple Silicon · 80.1 MiB" },
     linux: { label: "下载 Linux 版", meta: "v0.6.0 · AppImage · 152.6 MiB" },
-    android: { label: "下载 Android 版", meta: "v0.1.4 · universal · 70.4 MiB" }
+    android: { label: "下载 Android 版", meta: "v1.0.1 · universal · 70.4 MiB" }
   };
 
   if (platform && copy[platform]) {
@@ -204,7 +204,7 @@
   /* -------------------------------------------------------- 校验命令 */
   var snippets = {
     windows: {
-      code: 'certutil -hashfile "LeoDeepAI_0.6.0_x64-setup.exe" SHA256',
+      code: 'certutil -hashfile "LeoDeepAI_0.6.4_x64-setup.exe" SHA256',
       hint: "在安装包所在目录打开命令提示符后执行"
     },
     macos: {
@@ -216,7 +216,7 @@
       hint: "在终端执行;下的是 deb 就把文件名换成 .deb"
     },
     android: {
-      code: "sha256sum LeoDeepAI_0.1.4_universal.apk",
+      code: "sha256sum LeoDeepAI-1.0.1-release.apk",
       hint: "在 Termux 中执行,或把文件拷到电脑后用对应系统的命令"
     }
   };
