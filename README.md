@@ -16,8 +16,9 @@ LeoDeepAI 的公开下载入口。这个仓库只托管**下载页**和**安装�
 | Linux x64 (deb) | [`LeoDeepAI_0.6.7_amd64.deb`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.6.7/LeoDeepAI_0.6.7_amd64.deb) | 97.0 MiB | `9624ff08ffefa89fd2f2b8b42e0ce46294e5d3909615b58d007d9ff8bedb64d8` |
 | Linux x64 (AppImage) | [`LeoDeepAI_0.6.7_amd64.AppImage`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/v0.6.7/LeoDeepAI_0.6.7_amd64.AppImage) | 167.4 MiB | `87e0686046e3211a5eb7a55db08def9dd1e12a266f6d0f7ef9c0b24deec0344b` |
 | Android universal | [`LeoDeepAI-1.0.3-release.apk`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/android-v1.0.3/LeoDeepAI-1.0.3-release.apk) | 71.5 MiB | `662328e895bb963282503ce2cebef7f41303ff33cfb89189a1a0d798764ce38c` |
+| Chrome / Edge 插件 | [`leodeepai-auto-v1.1.1.zip`](https://github.com/LeoCodePlay/LeoDeepAI-Download/releases/download/extension-v1.1.1/leodeepai-auto-v1.1.1.zip) | 51.8 KiB | `2ca48a2a10076078faf8e7f7c886e8eea7a6ca9812574dcc34695bfcff0049af` |
 
-Windows / macOS / Linux 桌面端均为 0.6.7；Android 为 1.0.3 正式签名包（versionCode 9，可直接覆盖 1.0.0）。应用内「检查更新」当前直接读本仓库的 GitHub Releases。
+Windows / macOS / Linux 桌面端均为 0.6.7；Android 为 1.0.3 正式签名包（versionCode 9，可直接覆盖 1.0.0）；浏览器插件为 1.1.1（Manifest V3）。应用内「检查更新」当前直接读本仓库的 GitHub Releases。
 
 ## 安装
 
@@ -32,6 +33,8 @@ xattr -dr com.apple.quarantine /Applications/LeoDeepAI.app
 **Linux**：deb 用 `sudo apt install ./LeoDeepAI_0.6.7_amd64.deb`（会声明 webkit2gtk 等依赖）；AppImage 用 `chmod +x LeoDeepAI_0.6.7_amd64.AppImage && ./LeoDeepAI_0.6.7_amd64.AppImage`。缺少运行库时装 `libwebkit2gtk-4.1-0` 与 `libgtk-3-0`，Wayland 下异常可用 `GDK_BACKEND=x11` 启动。
 
 **Android**：下载 universal 包（约 71 MiB，含三种 ABI），安装前在系统设置里允许浏览器或文件管理器「安装未知应用」。最低版本 Android 7.0（API 24）。包名 `com.leodeepai.app`，1.0.3 为正式签名（`CN=LeoDeepAI`，versionCode 9），从 1.0.0 起可直接覆盖升级。
+
+**Chrome / Edge 插件**：把 `leodeepai-auto-v1.1.1.zip` 解压到固定目录（扩展加载的就是这个目录本身，别放「下载」或临时目录），打开 `chrome://extensions`（Edge 是 `edge://extensions`）→ 开启右上角「开发者模式」→「加载已解压的扩展程序」→ 选中该目录。桌面安装包里自带同一份插件，装过桌面端不必重复下载。
 
 桌面端不登录也能使用自己填的 API Key 或本地 Ollama；平台模型、签到额度与手机配对需要登录账号。
 
@@ -53,6 +56,9 @@ sha256sum LeoDeepAI_0.6.7_amd64.AppImage
 
 # Android
 sha256sum LeoDeepAI-1.0.3-release.apk
+
+# Chrome / Edge 插件
+sha256sum leodeepai-auto-v1.1.1.zip
 ```
 
 ## 这个仓库是什么
@@ -63,7 +69,7 @@ sha256sum LeoDeepAI-1.0.3-release.apk
 
 ### 这个仓库不是什么
 
-- **不包含**服务端、桌面端、移动端、浏览器扩展的源代码。
+- **不包含**服务端、桌面端、移动端、浏览器扩展的源代码（扩展只分发可直接加载的 zip 构建产物）。
 - **不包含**签名证书、keystore、`key.properties` 或任何密钥。
 - **不构建** LeoDeepAI；这里只分发已经构建好的安装包。
 
@@ -110,7 +116,9 @@ python -m http.server 8080
      ..\release\LeoDeepAI_0.1.2_universal-debug.apk
    ```
 
-3. 更新 `index.html` 里的版本号、下载链接、大小、SHA-256 和「版本记录」，提交后 Pages 会自动重新部署。
+3. 更新 `index.html` 里的版本号、下载链接、大小、SHA-256 和「版本记录」，以及 `README.md` 的下载表；改动过 `assets/style.css` 或 `assets/app.js` 时，同步把引用处的 `?v=` 递增（当前 `?v=0.6.7.1`），否则回访用户会拿到缓存里的旧文件。提交后 Pages 会自动重新部署。
+
+4. 浏览器插件走单独的 tag `extension-v<版本>`（版本号唯一来源是 `extension/manifest.json`），**必须**发布成 pre-release：本仓库的 Latest 要留给桌面端，桌面端「检查更新」读的就是 `latest`。插件发版时需要一起改的地方：`index.html` 的插件卡片（版本、大小、下载链接，SHA-256 共三处：可见文本、`data-copy`、`README.md` 表格）、校验区表格里那一行、版本记录，以及 `README.md` 的下载表。
 
 ## 目录结构
 

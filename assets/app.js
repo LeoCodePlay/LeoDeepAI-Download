@@ -218,6 +218,10 @@
     android: {
       code: "sha256sum LeoDeepAI-1.0.3-release.apk",
       hint: "在 Termux 中执行,或把文件拷到电脑后用对应系统的命令"
+    },
+    plugin: {
+      code: 'certutil -hashfile "leodeepai-auto-v1.1.1.zip" SHA256',
+      hint: "Windows 用这条;macOS / Linux 换成 shasum -a 256 或 sha256sum"
     }
   };
 
